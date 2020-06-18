@@ -1,7 +1,62 @@
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.background {
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+}
+
 .profile {
-    height: 160px;
-    width: 160px;
-    object-fit: cover;
-    object-position: 28%; 
-    border-radius: 100px;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  object-position: 28%;
+  border-radius: 150px;
+  justify-content: center;
+}
+
+.flex_intro {
+  height: 66.66666%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(221, 223, 226, 0);
+  overflow: hidden;
+  position: fixed
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: rgb(69, 90, 129);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color:  rgb(69, 90, 129);
+  color: white;
+  border-radius: 10px;
 }
