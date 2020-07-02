@@ -12,6 +12,7 @@ html {
   margin-bottom: 2%;
   margin: auto;
   width: 70%;
+  max-width: 70%;
 }
 
 .background {
@@ -30,6 +31,26 @@ html {
   margin: auto;
 }
 
+.icon_small {
+  max-height: 20px;
+  max-width: 20px;
+  margin: 5px
+}
+
+.icon_large {
+  max-height: 24px;
+  max-width: 24px;
+  margin: 5px
+}
+
+.icon_small:hover {
+  opacity: 0.75;
+}
+
+.icon_large:hover {
+  opacity: 0.75;
+}
+
 .projects {
   width: 70%;
   margin: auto;
@@ -39,22 +60,14 @@ html {
   background-color: rgb(25, 74, 85);
   color: white;
   font-size: 16px;
-  padding: 5px;
-  border-radius: 2px;
-}
-
-.techskill {
-  background-color: rgb(25, 74, 85);
-  color: white;
-  font-size: 15px;
   padding: 10px;
-  border-radius: 2px;
+  border-radius: 4px;
+  max-width: 50px;
 }
 
-.skilllist {
-  display: flex;
-  width: 50%;
-  justify-content: space-evenly;
+.resume:hover {
+  cursor: pointer;
+  background-color: rgba(25, 74, 85, 0.75);
 }
 
 .profile {
@@ -88,7 +101,7 @@ html {
 }
 
 .line {
-  width: 20vw;
+  width: 25vw;
 }
 
 .topnav {
@@ -116,4 +129,9 @@ html {
   background-color: rgb(16, 36, 40);
   color: white;
   border-radius: 10px;
+}
+
+ul {
+  list-style-image: url("../images/arrow.png");
+  columns: 3
 }
