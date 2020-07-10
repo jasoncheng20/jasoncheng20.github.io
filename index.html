@@ -14,6 +14,11 @@
     />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="scripts/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="topnav">
@@ -28,12 +33,36 @@
           <h2>Welcome to my portfolio!</h2>
           <hr class="line" />
           <h2>Hi! My name is Jason, and I'm a full stack developer.</h2>
-          <p><img class="icon_small" src="images/location.png">San Diego, CA</p>
-          <p><img class="icon_small" src="images/email.png">jasoncheng20@gmail.com</p>
-          <a href="https://www.linkedin.com/in/jasoncheng20"><img class="icon_large" src="images/linkedin.png"></a>
-          <a href="https://github.com/jasoncheng20"><img class="icon_large" src="images/github.png"></a>
+          <p>
+            <img
+              class="icon_small"
+              src="images/location.png"
+              alt="Location Icon"
+            />San Diego, CA
+          </p>
+          <p>
+            <img
+              class="icon_small"
+              src="images/email.png"
+              alt="Email Icon"
+            />jasoncheng20@gmail.com
+          </p>
+          <a href="https://www.linkedin.com/in/jasoncheng20"
+            ><img
+              class="icon_large"
+              src="images/linkedin.png"
+              alt="LinkedIn Icon"
+          /></a>
+          <a href="https://github.com/jasoncheng20"
+            ><img class="icon_large" src="images/github.png" alt="GitHub Icon"
+          /></a>
         </div>
-        <img class="profile" src="images/profile.jpg" alt="profile" />
+        <img
+          class="profile"
+          src="images/profile.jpg"
+          alt="profile"
+          alt="Jason's Profile Photo"
+        />
       </div>
     </div>
     <!-- 
@@ -66,7 +95,9 @@
         <li>PostgreSQL</li>
         <li>Wordpress (PHP)</li>
       </ul>
-      <a class="resume">My Resume</a>
+      <div class="center">
+        <a href="images/resume.pdf" target="_blank" class="resume">My Resume</a>
+      </div>
     </div>
     <!-- 
   ==========================
@@ -74,9 +105,9 @@
   ==========================
   -->
     <div class="projects" id="projects">
-      <br>
-      <hr class="line">
-      <br>
+      <br />
+      <hr class="line" />
+      <br />
       <h2>Projects:</h2>
       <p>Pomodoro Timer App</p>
       <p>Treasure Hunt</p>
@@ -90,9 +121,9 @@
   ==========================
   -->
     <div class="contact" id="contact">
-      <br>
-      <hr class="line">
-      <br>
+      <br />
+      <hr class="line" />
+      <br />
       <h2>Let's Connect!</h2>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -103,7 +134,28 @@
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum."
       </p>
-      <br>
+      <br />
     </div>
+
+    <script>
+      (function($) {
+        $(function(){
+          $(".topnav").hide()
+
+          $(window).scroll(function(){
+            if ($(this).scrollTop() > 200) {
+              $(".topnav").fadeIn(600)
+            } else {
+              $(".topnav").fadeOut(600)
+            }
+          }
+
+          )
+          $('.icon_small').fadeIn(300)
+        });
+      }) (jQuery);
+    </script>
+
+    <footer>Copyright &copy; 2020</footer>
   </body>
 </html>

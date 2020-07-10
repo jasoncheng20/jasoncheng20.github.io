@@ -34,20 +34,16 @@ html {
 .icon_small {
   max-height: 20px;
   max-width: 20px;
-  margin: 5px
+  margin: 5px;
 }
 
 .icon_large {
   max-height: 24px;
   max-width: 24px;
-  margin: 5px
+  margin: 5px;
 }
 
-.icon_small:hover {
-  opacity: 0.75;
-}
-
-.icon_large:hover {
+.icon_small:hover, .icon_large:hover {
   opacity: 0.75;
 }
 
@@ -56,13 +52,25 @@ html {
   margin: auto;
 }
 
+ul {
+  list-style-image: url("../images/arrow.png");
+  columns: 3;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 .resume {
+  margin: auto;
   background-color: rgb(25, 74, 85);
   color: white;
   font-size: 16px;
   padding: 10px;
   border-radius: 4px;
-  max-width: 50px;
+  max-width: 100px;
+  text-decoration: none;
 }
 
 .resume:hover {
@@ -88,26 +96,15 @@ html {
   color: rgb(16, 36, 40);
 }
 
-.fadein {
-  animation: fadeIn ease 4s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .line {
   width: 25vw;
 }
 
 .topnav {
-  background-color: rgba(16, 36, 40, 0);
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
   position: fixed;
+  width: 100%;
 }
 
 .topnav a {
@@ -125,13 +122,14 @@ html {
   border-color: rgb(16, 36, 40);
 }
 
-.topnav a.active {
-  background-color: rgb(16, 36, 40);
-  color: white;
-  border-radius: 10px;
+.fadein {
+  animation: fadeIn ease 6s;
 }
-
-ul {
-  list-style-image: url("../images/arrow.png");
-  columns: 3
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
