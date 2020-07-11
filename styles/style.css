@@ -5,12 +5,27 @@ html {
   font-family: "Vollkorn";
   margin: 0;
   padding: 0;
+  line-height: 1.6em;
 }
 
-.about {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin: auto;
+hr {
+  width: 25vw;
+}
+
+ul {
+  list-style-image: url("../images/arrow.png");
+  columns: 3;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2em;
+  font-size: 12px;
+}
+
+.section {
+  margin: 5% auto;
   width: 70%;
   max-width: 70%;
 }
@@ -26,15 +41,10 @@ html {
   padding: 0;
 }
 
-.contact {
-  width: 70%;
-  margin: auto;
-}
-
 .icon_small {
-  max-height: 20px;
-  max-width: 20px;
-  margin: 5px;
+  max-height: 1em;
+  max-width: 1em;
+  margin: 0px 5px;
 }
 
 .icon_large {
@@ -47,23 +57,13 @@ html {
   opacity: 0.75;
 }
 
-.projects {
-  width: 70%;
-  margin: auto;
-}
-
-ul {
-  list-style-image: url("../images/arrow.png");
-  columns: 3;
-}
-
 .center {
   display: flex;
   justify-content: center;
 }
 
 .resume {
-  margin: auto;
+  margin: 1% auto;
   background-color: rgb(25, 74, 85);
   color: white;
   font-size: 16px;
@@ -87,8 +87,39 @@ ul {
   justify-content: center;
 }
 
+.project {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  border-radius: 15px;
+  opacity: 75%;
+  float: left;
+  text-align: center;
+  color: white;
+  margin: 5px
+}
+
+.project:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+#pomodoro {
+  background-image: url("../images/pomodoro/pom3.png");
+}
+
+#thoughtfull {
+  background-image: url("../images/thoughtfull/tflogo.png");
+}
+
+#treasure {
+  background-image: url("../images/treasure/th1.png");
+}
+
 .flex_intro {
-  height: 66.66666%;
+  height: 80%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -96,12 +127,8 @@ ul {
   color: rgb(16, 36, 40);
 }
 
-.line {
-  width: 25vw;
-}
-
 .topnav {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0);
   overflow: hidden;
   position: fixed;
   width: 100%;
