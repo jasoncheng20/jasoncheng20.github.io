@@ -28,6 +28,7 @@ footer {
   margin: 5% auto;
   width: 70%;
   max-width: 70%;
+  float: none
 }
 
 .background {
@@ -87,35 +88,60 @@ footer {
   justify-content: center;
 }
 
+#about p{
+  font-size: 15px;
+}
+
+#skills {
+  float:right;
+  width:40%;
+}
+
+#isometric {
+  max-width: 100%;
+}
+
+.sidebar {
+  float: left;
+  width:60%;
+  margin: -10px
+}
+
 .project {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
   border-radius: 15px;
-  opacity: 75%;
   float: left;
   text-align: center;
   color: white;
-  margin: 5px
+  margin: 10px
 }
 
 .project:hover {
-  opacity: 100%;
   cursor: pointer;
 }
 
 #pomodoro {
   background-image: url("../images/pomodoro/pom3.png");
 }
-
 #thoughtfull {
   background-image: url("../images/thoughtfull/tflogo.png");
 }
-
 #treasure {
   background-image: url("../images/treasure/th1.png");
+}
+#fish_tinder {
+  background-image: url("../images/fish_tinder/ft2.png");
+}
+#pig_latin {
+  background-image: url("../images/piglatin.png");
+}
+
+.clr {
+  clear: both;
 }
 
 .flex_intro {

@@ -8,7 +8,10 @@
       href="images/favicon.ico"
       type="images/favicon.ico"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vollkorn"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Vollkorn"
+    />
     <link rel="stylesheet" href="styles/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -27,8 +30,8 @@
       <div class="flex_intro fadein">
         <div>
           <h2>Welcome to my portfolio!</h2>
-          <hr/>
-          <h2>Hi! My name is Jason, and I'm a full stack developer.</h2>
+          <hr />
+          <h2>My name is Jason, and I'm a full stack developer.</h2>
           <p>
             <img
               class="icon_small"
@@ -67,35 +70,43 @@
   ==========================
   -->
     <div class="section" id="about">
-      <h2>About Me</h2>
-      <p>
-        My name is Jason Cheng. I'm a full stack web-developer. I took a
-        non-conventional route to where I am today. I graduated from UCSD with a
-        B.S. in Human Biology and a minor in Psychology, and worked as a
-        research associate for a few years before deciding to make a career
-        switch. I graduated from a full stack web-development bootcamp in 2019
-        and have not looked back. I love to come up with innovative solutions to
-        problems, and the plethora of opportunities that the tech field provides
-        to learn and grow. Here are some of the technologies I've picked up so
-        far:
-      </p>
-      <ul>
-        <li>JavaScript (ES6)</li>
-        <li>React</li>
-        <li>Ruby</li>
-        <li>Rails</li>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Python</li>
-        <li>Django</li>
-        <li>PostgreSQL</li>
-        <li>Wordpress (PHP)</li>
-      </ul>
-      <div class="center">
-        <a href="images/resume.pdf" target="_blank" class="resume">My Resume</a>
+      <div id="skills">
+        <h2>About Me</h2>
+        <p>
+          My name is Jason Cheng. I'm a full stack web-developer. I took a
+          non-conventional route to where I am today. I graduated from UC San
+          Diego with a B.S. in Human Biology and a minor in Psychology, and
+          worked as a research associate for a few years before deciding to make
+          a career switch. I graduated from a full stack web-development
+          bootcamp in 2019 and have not looked back. I love to come up with
+          innovative solutions to problems, and the plethora of opportunities
+          that the tech field provides to learn and grow. Here are some of the
+          technologies I've picked up so far:
+        </p>
+        <ul>
+          <li>JavaScript (ES6)</li>
+          <li>React</li>
+          <li>Ruby</li>
+          <li>Rails</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Python</li>
+          <li>Django</li>
+          <li>PostgreSQL</li>
+          <li>Wordpress (PHP)</li>
+        </ul>
+        <div class="center">
+          <a href="images/resume.pdf" target="_blank" class="resume"
+            >My Resume</a
+          >
+        </div>
       </div>
-      <hr/>
+      <div class="sidebar">
+        <img src="images/isometric.png" id="isometric" />
+      </div>
+      <div class="clr"></div>
     </div>
+    <hr />
     <!-- 
   ==========================
   PORTFOLIO
@@ -106,10 +117,11 @@
       <p class="project" id="pomodoro">Pomodoro Timer App</p>
       <p class="project" id="thoughtfull">ThoughtFull App</p>
       <p class="project" id="treasure">Treasure Hunt</p>
-      <p class="project" >Fish Tinder</p>
-      <p class="project" >Pig Latin Translator</p>
-      <hr/>
+      <p class="project" id="fish_tinder">Fish Tinder</p>
+      <p class="project" id="pig_latin">Pig Latin Translator</p>
+      <div class="clr"></div>
     </div>
+    <hr />
     <!-- 
   ==========================
   CONTACT
@@ -133,17 +145,17 @@
       (function ($) {
         $(function () {
           $(window).scroll(function () {
-            if ($(this).scrollTop() > ($(".topnav").height())) {
+            if ($(this).scrollTop() > $(".topnav").height()) {
               $(".topnav").css({
                 "background-color": "#fff",
                 "box-shadow": "0px 1px 10px lightgrey",
-                "transition": "0.5s"
+                transition: "0.5s",
               });
             } else {
               $(".topnav").css({
                 "background-color": "rgba(255, 255, 255, 0)",
                 "box-shadow": "none",
-                "transition": "0.5s"
+                transition: "0.5s",
               });
             }
           });
@@ -151,6 +163,6 @@
       })(jQuery);
     </script>
 
-    <footer>Copyright &copy; 2020</footer>
+    <footer>Copyright &copy; 2020 Jason Cheng</footer>
   </body>
 </html>
