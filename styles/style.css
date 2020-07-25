@@ -90,6 +90,7 @@ footer {
   cursor: pointer;
   background-color: rgb(44, 143, 165);
 }
+
 /* ==============================
 Intro Jumbotron 
 ============================== */
@@ -114,7 +115,7 @@ Intro Jumbotron
   padding: 0;
 }
 
-#home p{
+#home p {
   line-height: 0.8em;
 }
 
@@ -130,7 +131,8 @@ Intro Jumbotron
   margin: 5px;
 }
 
-.icon_small:hover, .icon_large:hover {
+.icon_small:hover,
+.icon_large:hover {
   opacity: 0.75;
 }
 
@@ -147,13 +149,13 @@ Intro Jumbotron
 About Me 
 ============================== */
 
-#about p{
+#about p {
   font-size: 15px;
 }
 
 #skills {
-  float:right;
-  width:40%;
+  float: right;
+  width: 40%;
 }
 
 #isometric {
@@ -162,8 +164,8 @@ About Me
 
 .sidebar {
   float: left;
-  width:60%;
-  margin: -10px
+  width: 60%;
+  margin: -10px;
 }
 
 .center {
@@ -177,7 +179,7 @@ Projects
 
 .project {
   float: left;
-  margin: 10px
+  margin: 10px;
 }
 
 .thumbnail {
@@ -194,13 +196,19 @@ Projects
 .thumbnail:hover {
   cursor: pointer;
   box-shadow: 4px 4px 8px rgba(75, 75, 75, 0.466);
-  top: -4px
+  top: -4px;
 }
 
 /*==============================
 Contact
 ==============================*/
 
- #contact {
-  width: 50%
- }
+#contact {
+  width: 50%;
+}
+
+#contact h2,
+span {
+  float: left;
+  margin: 5px auto;
+}
