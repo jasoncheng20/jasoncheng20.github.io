@@ -91,6 +91,16 @@ footer {
   background-color: rgb(44, 143, 165);
 }
 
+.fadeInUp {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+
+.fadeIn {
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
 /* ==============================
 Intro Jumbotron 
 ============================== */
