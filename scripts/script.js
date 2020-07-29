@@ -18,5 +18,11 @@
         }
       });
       
+      $(window).scroll(function () {
+        if($(this).scrollTop() > $(".topnav").height() + 50) {
+          $("#about").fadeIn(1000)
+        }
+      })
+
     });
   })(jQuery);

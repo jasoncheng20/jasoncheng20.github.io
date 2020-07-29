@@ -1,3 +1,12 @@
+/* Colors
+Dark purple #331E36
+Dark Slate blue #41337A
+Air Superiority blue #6EA4BF
+Powder blue #C2EFEB
+Honeydew #ECFEE8
+
+*/
+
 body,
 html {
   height: 100%;
@@ -77,13 +86,14 @@ footer {
 
 .button {
   margin: 10px;
-  background-color: rgb(25, 74, 85);
+  background-color: #6EA4BF;
   color: white;
   font-size: 16px;
   padding: 5px 10px;
   border-radius: 4px;
   max-width: 100px;
   text-decoration: none;
+  transition: background-color 500ms;
 }
 
 .button:hover {
@@ -92,13 +102,20 @@ footer {
 }
 
 .fadeInUp {
-  animation: fadeInUp;
-  animation-duration: 1s;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
-.fadeIn {
-  animation: fadeIn;
-  animation-duration: 1s;
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    bottom: -5em;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0em;
+  }
 }
 
 /* ==============================
@@ -111,7 +128,8 @@ Intro Jumbotron
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  color: rgb(16, 36, 40);
+  color: #102428;
+  position: relative;
 }
 
 #home {
@@ -158,6 +176,10 @@ Intro Jumbotron
 /* ==============================
 About Me 
 ============================== */
+#about {
+  display: none;
+}
+
 
 #about p {
   font-size: 15px;
@@ -205,7 +227,7 @@ Projects
 
 .thumbnail:hover {
   cursor: pointer;
-  box-shadow: 4px 4px 8px rgba(75, 75, 75, 0.466);
+  box-shadow: 2px 2px 8px  rgba(75, 75, 75, 0.4), -2px 0 8px rgba(75, 75, 75, 0.2);
   top: -4px;
 }
 
