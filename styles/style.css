@@ -47,7 +47,6 @@ footer {
 .container {
   width: 100vw;
   padding: 5px;
-  background-color: rgb(255, 217, 93);
 }
 
 .section {
@@ -237,10 +236,15 @@ Contact
 
 #contact {
   width: 50%;
+  display: none;
 }
 
 #contact h2,
 span {
   float: left;
   margin: 5px auto;
+}
+
+#contactcontainer {
+  background-color: rgb(255, 217, 93);
 }

@@ -31,37 +31,28 @@
     ----------------------------------------->
 
   <body>
-    <div class="topnav">
+    <nav class="topnav">
       <a href="#home">Home</a>
       <a href="#aboutanchor">About</a>
       <a href="#portfolioanchor">Projects</a>
       <a href="#contact">Contact</a>
-    </div>
+    </nav>
     <div class="background" id="home">
-      <div class="flex_intro fadeInUp">
+      <header class="flex_intro fadeInUp">
         <div>
           <h2>Welcome to my portfolio!</h2>
           <hr />
-          <h2>My name is Jason, and I'm a full stack developer.</h2>
+          <h1>My name is Jason, and I'm a full stack developer.</h1>
           <p>
-            <img
-              class="icon_small"
-              src="images/location.png"
-              alt="Location Icon"
+            <img class="icon_small" src="images/location.png" alt="Location Icon"
             />San Diego, CA
           </p>
           <p>
-            <img
-              class="icon_small"
-              src="images/email.png"
-              alt="Email Icon"
+            <img class="icon_small" src="images/email.png" alt="Email Icon"
             />jasoncheng20@gmail.com
           </p>
           <a href="https://www.linkedin.com/in/jasoncheng20" target="_blank"
-            ><img
-              class="icon_large"
-              src="images/linkedin.png"
-              alt="LinkedIn Icon"
+            ><img class="icon_large" src="images/linkedin.png" alt="LinkedIn Icon"
           /></a>
           <a href="https://github.com/jasoncheng20" target="_blank"
             ><img class="icon_large" src="images/github.png" alt="GitHub Icon"
@@ -70,10 +61,9 @@
         <img
           class="profile"
           src="images/profile.jpg"
-          alt="profile"
           alt="Jason's Profile Photo"
         />
-      </div>
+      </header>
     </div>
     <!-- 
   ==========================
@@ -81,7 +71,8 @@
   ==========================
   -->
     <div class="anchor" id="aboutanchor"></div>
-    <div class="section" id="about">
+    <div class="container" id="aboutcontainer">
+    <section class="section" id="about">
       <div id="skills">
         <h2>About Me</h2>
         <p>
@@ -115,6 +106,7 @@
         <img src="images/isometric.png" id="isometric" />
       </div>
       <div class="clr"></div>
+    </section>
     </div>
     <hr />
     <!-- 
@@ -123,7 +115,8 @@
   ==========================
   -->
     <div class="anchor" id="portfolioanchor"></div>
-    <div class="section" id="portfolio">
+    <div class="container" id="portfoliocontainer">
+    <section class="section" id="portfolio">
       <h2>Projects:</h2>
       <a
         href="images/pomodoro/pom3.png"
@@ -166,14 +159,15 @@
         <img src="./images/piglatin.png" class="thumbnail" />
       </a>
       <div class="clr"></div>
+    </section>
     </div>
     <!-- 
   ==========================
   CONTACT
   ==========================
   -->
-    <div class="container">
-      <div class="section" id="contact">
+    <div class="container" id="contactcontainer">
+      <section class="section" id="contact">
         <h2>Let's Connect!</h2>
         <span>
           <a href="https://www.linkedin.com/in/jasoncheng20" target="_blank"
@@ -196,7 +190,7 @@
         <div class="center">
           <a href="mailto:jasoncheng20@gmail.com" class="button">Email me</a>
         </div>
-      </div>
+      </section>
     </div>
 
     <footer>Copyright &copy; 2020 Jason Cheng</footer>

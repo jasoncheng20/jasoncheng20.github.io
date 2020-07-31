@@ -24,5 +24,10 @@
         }
       })
 
+      $(window).scroll(function () {
+        if($(this).scrollTop() > $(".topnav").height() + $("#aboutcontainer").height() + $("#portfoliocontainer").height()) {
+          $("#contact").fadeIn(1000)
+        }
+      })
     });
   })(jQuery);
