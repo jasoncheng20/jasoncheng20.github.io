@@ -23,6 +23,12 @@
           $("#about").fadeIn(1000)
         }
       })
+      
+      $(window).scroll(function () {
+        if($(this).scrollTop() > $(".topnav").height() + $("#aboutcontainer").height() + 50) {
+          $("#portfolio").fadeIn(1000)
+        }
+      })
 
       $(window).scroll(function () {
         if($(this).scrollTop() > $(".topnav").height() + $("#aboutcontainer").height() + $("#portfoliocontainer").height()) {

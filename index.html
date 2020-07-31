@@ -26,17 +26,23 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-
-  <!-----------------------------------------
-    ----------------------------------------->
-
+  <!-- 
+  ==========================
+  NAVBAR
+  ==========================
+  -->
   <body>
     <nav class="topnav">
       <a href="#home">Home</a>
       <a href="#aboutanchor">About</a>
       <a href="#portfolioanchor">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#contactanchor">Contact</a>
     </nav>
+  <!-- 
+  ==========================
+  INTRO
+  ==========================
+  -->
     <div class="background" id="home">
       <header class="flex_intro fadeInUp">
         <div>
@@ -44,15 +50,24 @@
           <hr />
           <h1>My name is Jason, and I'm a full stack developer.</h1>
           <p>
-            <img class="icon_small" src="images/location.png" alt="Location Icon"
+            <img
+              class="icon_small"
+              src="images/location.png"
+              alt="Location Icon"
             />San Diego, CA
           </p>
           <p>
-            <img class="icon_small" src="images/email.png" alt="Email Icon"
+            <img
+              class="icon_small"
+              src="images/email.png"
+              alt="Email Icon"
             />jasoncheng20@gmail.com
           </p>
           <a href="https://www.linkedin.com/in/jasoncheng20" target="_blank"
-            ><img class="icon_large" src="images/linkedin.png" alt="LinkedIn Icon"
+            ><img
+              class="icon_large"
+              src="images/linkedin.png"
+              alt="LinkedIn Icon"
           /></a>
           <a href="https://github.com/jasoncheng20" target="_blank"
             ><img class="icon_large" src="images/github.png" alt="GitHub Icon"
@@ -67,46 +82,46 @@
     </div>
     <!-- 
   ==========================
-  TECH SKILLS
+  ABOUT
   ==========================
   -->
     <div class="anchor" id="aboutanchor"></div>
     <div class="container" id="aboutcontainer">
-    <section class="section" id="about">
-      <div id="skills">
-        <h2>About Me</h2>
-        <p>
-          Nice to meet you, I'm Jason Cheng! I'm a full stack web-developer, and
-          I took a non-conventional route to where I am today. I graduated from
-          UC San Diego with a B.S. in Human Biology and a minor in Psychology,
-          and worked as a research associate for a few years before deciding to
-          make a career switch. I graduated from a full stack web-development
-          bootcamp in 2019 and have not looked back. Here are some of the
-          technologies I've picked up so far:
-        </p>
-        <ul>
-          <li>JavaScript (ES6)</li>
-          <li>React</li>
-          <li>Ruby</li>
-          <li>Rails</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Python</li>
-          <li>Django</li>
-          <li>PostgreSQL</li>
-          <li>Wordpress (PHP)</li>
-        </ul>
-        <div class="center">
-          <a href="images/resume.pdf" target="_blank" class="button"
-            >My Resume</a
-          >
+      <section class="section" id="about">
+        <div id="skills">
+          <h2>About Me</h2>
+          <p>
+            Nice to meet you, I'm Jason Cheng! I'm a full stack web-developer,
+            and I took a non-conventional route to where I am today. I graduated
+            from UC San Diego with a B.S. in Human Biology and a minor in
+            Psychology, and worked as a research associate for a few years
+            before deciding to make a career switch. I graduated from a full
+            stack web-development bootcamp in 2019 and have not looked back.
+            Here are some of the technologies I've picked up so far:
+          </p>
+          <ul>
+            <li>JavaScript (ES6)</li>
+            <li>React</li>
+            <li>Ruby</li>
+            <li>Rails</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Python</li>
+            <li>Django</li>
+            <li>PostgreSQL</li>
+            <li>Wordpress (PHP)</li>
+          </ul>
+          <div class="center">
+            <a href="images/resume.pdf" target="_blank" class="button"
+              >My Resume</a
+            >
+          </div>
         </div>
-      </div>
-      <div class="sidebar">
-        <img src="images/isometric.png" id="isometric" />
-      </div>
-      <div class="clr"></div>
-    </section>
+        <div class="sidebar">
+          <img src="images/isometric.png" id="isometric" />
+        </div>
+        <div class="clr"></div>
+      </section>
     </div>
     <hr />
     <!-- 
@@ -116,56 +131,57 @@
   -->
     <div class="anchor" id="portfolioanchor"></div>
     <div class="container" id="portfoliocontainer">
-    <section class="section" id="portfolio">
-      <h2>Projects:</h2>
-      <a
-        href="images/pomodoro/pom3.png"
-        class="project"
-        data-fancybox
-        data-caption="Pomodoro Timer | JavaScript, React, Python, Django"
-      >
-        <img src="./images/pomodoro/pom1.png" class="thumbnail" />
-      </a>
-      <a
-        href="images/thoughtfull/tf1.png"
-        class="project"
-        data-fancybox
-        data-caption="ThoughtFull: A Reflection App | JavaScript, React, Ruby, Rails"
-      >
-        <img src="./images/thoughtfull/tflogo.png" class="thumbnail" />
-      </a>
-      <a
-        href="images/treasure/th1.png"
-        class="project"
-        data-fancybox
-        data-caption="Treasure Hunt | JavaScript, React"
-      >
-        <img src="./images/treasure/th2.png" class="thumbnail" />
-      </a>
-      <a
-        href="images/fish_tinder/ft2.png"
-        class="project"
-        data-fancybox
-        data-caption="Fish Tinder | JavaScript, React, Ruby, Rails"
-      >
-        <img src="images/fish_tinder/ft2.png" class="thumbnail" />
-      </a>
-      <a
-        href="images/piglatin.png"
-        class="project"
-        data-fancybox
-        data-caption="Pig Latin Translator | JavaScript"
-      >
-        <img src="./images/piglatin.png" class="thumbnail" />
-      </a>
-      <div class="clr"></div>
-    </section>
+      <section class="section" id="portfolio">
+        <h2>Projects:</h2>
+        <a
+          href="images/pomodoro/pom3.png"
+          class="project"
+          data-fancybox
+          data-caption="Pomodoro Timer | JavaScript, React, Python, Django"
+        >
+          <img src="./images/pomodoro/pom1.png" class="thumbnail" />
+        </a>
+        <a
+          href="images/thoughtfull/tf1.png"
+          class="project"
+          data-fancybox
+          data-caption="ThoughtFull: A Reflection App | JavaScript, React, Ruby, Rails"
+        >
+          <img src="./images/thoughtfull/tflogo.png" class="thumbnail" />
+        </a>
+        <a
+          href="images/treasure/th1.png"
+          class="project"
+          data-fancybox
+          data-caption="Treasure Hunt | JavaScript, React"
+        >
+          <img src="./images/treasure/th2.png" class="thumbnail" />
+        </a>
+        <a
+          href="images/fish_tinder/ft2.png"
+          class="project"
+          data-fancybox
+          data-caption="Fish Tinder | JavaScript, React, Ruby, Rails"
+        >
+          <img src="images/fish_tinder/ft2.png" class="thumbnail" />
+        </a>
+        <a
+          href="images/piglatin.png"
+          class="project"
+          data-fancybox
+          data-caption="Pig Latin Translator | JavaScript"
+        >
+          <img src="./images/piglatin.png" class="thumbnail" />
+        </a>
+        <div class="clr"></div>
+      </section>
     </div>
     <!-- 
   ==========================
   CONTACT
   ==========================
   -->
+  <div class="anchor" id="contactanchor"></div>
     <div class="container" id="contactcontainer">
       <section class="section" id="contact">
         <h2>Let's Connect!</h2>
@@ -192,6 +208,11 @@
         </div>
       </section>
     </div>
+  <!-- 
+  ==========================
+  FOOTER
+  ==========================
+  -->
 
     <footer>Copyright &copy; 2020 Jason Cheng</footer>
   </body>
